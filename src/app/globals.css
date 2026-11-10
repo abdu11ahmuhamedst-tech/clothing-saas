@@ -1,0 +1,16 @@
+@import "tailwindcss";
+:root { color-scheme: light; background: #f7f7f2; color: #242621; font-family: Arial, Helvetica, sans-serif; }
+body { margin: 0; }
+::selection { background: #d9e7c0; }
+:focus-visible { outline: 3px solid #4d6d36; outline-offset: 5px; }
+section[id] { scroll-margin-top: 2rem; }
+.shell { width: min(100% - 3rem, 1152px); margin-inline: auto; }
+.eyebrow { font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; }
+.nav-link:hover { text-decoration: underline; text-underline-offset: 5px; }
+.button { display: inline-flex; align-items: center; gap: 2rem; border-radius: 4px; background: #242621; padding: 1rem 1.4rem; color: white; font-size: 0.875rem; }
+.button:hover { background: #434c39; }
+.skip-link { position: fixed; left: 1rem; top: -6rem; z-index: 50; background: white; padding: 1rem; }
+.skip-link:focus { top: 1rem; }
+.garment-scene { position: relative; display: grid; min-height: 300px; place-items: center; overflow: hidden; background: radial-gradient(ellipse at center, #d7dacb, #b5bcaa); }
+.garment { width: 210px; height: 230px; background: linear-gradient(100deg, #ddd9ca, #fffdf1 45%, #e1ddcf); clip-path: polygon(30% 4%, 40% 0, 43% 8%, 57% 8%, 60% 0, 70% 4%, 100% 23%, 85% 45%, 74% 37%, 76% 100%, 24% 100%, 26% 37%, 15% 45%, 0 23%); transform: rotate(-8deg); }
+@media (max-width: 380px) { .shell { width: calc(100% - 2rem); } .garment { width: 170px; height: 200px; } }
