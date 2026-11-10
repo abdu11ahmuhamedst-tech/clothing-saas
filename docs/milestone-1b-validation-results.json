@@ -1,0 +1,948 @@
+{
+  "directory": "/tmp/clothing-saas-pg-1se50uqx",
+  "os_user": "abdullahmuhamed",
+  "migration_hashes_before": {
+    "20261110000100_tenant_schema.sql": "b8734663267156f94785ad93a95fad8f035c0e2e782f9ea7d2de6137a823b74d",
+    "20261110000200_tenant_policies.sql": "e15823479614acd2d8af2abd192b4a3732bdd330ababe9051bf22faf4848fb04"
+  },
+  "migrations": [
+    {
+      "name": "20261110000100_tenant_schema.sql",
+      "passed": true
+    },
+    {
+      "name": "20261110000200_tenant_policies.sql",
+      "passed": true
+    }
+  ],
+  "boundary_tests": [
+    {
+      "name": "first migration closes stores to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes domains to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes memberships to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes products to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes variants to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes inventory to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes orders to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes order_items to anon",
+      "passed": true
+    },
+    {
+      "name": "first migration closes stores to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes domains to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes memberships to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes products to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes variants to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes inventory to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes orders to authenticated",
+      "passed": true
+    },
+    {
+      "name": "first migration closes order_items to authenticated",
+      "passed": true
+    }
+  ],
+  "stopped": true,
+  "postgres_version": "postgres (PostgreSQL) 18.6",
+  "security": {
+    "passed": 212,
+    "failed": 0,
+    "tests": [
+      {
+        "name": "all eight tables force and enable RLS",
+        "passed": true
+      },
+      {
+        "name": "no TCP listener configured",
+        "passed": true
+      },
+      {
+        "name": "restricted role attributes",
+        "passed": true
+      },
+      {
+        "name": "service explicitly has BYPASSRLS",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 11 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 12 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 13 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 14 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 15 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 17 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 18 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads stores",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads domains",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads memberships",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads products",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads variants",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads inventory",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads orders",
+        "passed": true
+      },
+      {
+        "name": "user 16 reads order_items",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant stores",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant domains",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant memberships",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant products",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant variants",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant inventory",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant orders",
+        "passed": true
+      },
+      {
+        "name": "user 11 cannot read foreign tenant order_items",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant stores",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant domains",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant memberships",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant products",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant variants",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant inventory",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant orders",
+        "passed": true
+      },
+      {
+        "name": "user 15 cannot read foreign tenant order_items",
+        "passed": true
+      },
+      {
+        "name": "caller is actual restricted login, not a superuser session",
+        "passed": true
+      },
+      {
+        "name": "own memberships cannot expose another user identity",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read stores",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no stores",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete stores",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate stores",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete stores",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate stores",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read domains",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no domains",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete domains",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate domains",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete domains",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate domains",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read memberships",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no memberships",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete memberships",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate memberships",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete memberships",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate memberships",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read products",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no products",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete products",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate products",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete products",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate products",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read variants",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no variants",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete variants",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate variants",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete variants",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate variants",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read inventory",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no inventory",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete inventory",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate inventory",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete inventory",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate inventory",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read orders",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no orders",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete orders",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate orders",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete orders",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate orders",
+        "passed": true
+      },
+      {
+        "name": "anon cannot read order_items",
+        "passed": true
+      },
+      {
+        "name": "no subject reads no order_items",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot delete order_items",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot truncate order_items",
+        "passed": true
+      },
+      {
+        "name": "service cannot delete order_items",
+        "passed": true
+      },
+      {
+        "name": "service cannot truncate order_items",
+        "passed": true
+      },
+      {
+        "name": "writer 11 creates product",
+        "passed": true
+      },
+      {
+        "name": "writer 11 creates variant",
+        "passed": true
+      },
+      {
+        "name": "writer 11 edits product",
+        "passed": true
+      },
+      {
+        "name": "writer 11 edits variant",
+        "passed": true
+      },
+      {
+        "name": "writer 12 creates product",
+        "passed": true
+      },
+      {
+        "name": "writer 12 creates variant",
+        "passed": true
+      },
+      {
+        "name": "writer 12 edits product",
+        "passed": true
+      },
+      {
+        "name": "writer 12 edits variant",
+        "passed": true
+      },
+      {
+        "name": "writer 13 creates product",
+        "passed": true
+      },
+      {
+        "name": "writer 13 creates variant",
+        "passed": true
+      },
+      {
+        "name": "writer 13 edits product",
+        "passed": true
+      },
+      {
+        "name": "writer 13 edits variant",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 14 product insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 14 variant insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 14 cannot update products",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 14 cannot update variants",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 16 product insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 16 variant insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 16 cannot update products",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 16 cannot update variants",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 18 product insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 18 variant insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 18 cannot update products",
+        "passed": true
+      },
+      {
+        "name": "nonwriter 18 cannot update variants",
+        "passed": true
+      },
+      {
+        "name": "nonwriter None product insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter None variant insert denied",
+        "passed": true
+      },
+      {
+        "name": "nonwriter None cannot update products",
+        "passed": true
+      },
+      {
+        "name": "nonwriter None cannot update variants",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant product insert denied",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant variant insert denied",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant products update sees zero rows",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant variants update sees zero rows",
+        "passed": true
+      },
+      {
+        "name": "protected products.store_id update",
+        "passed": true
+      },
+      {
+        "name": "protected products.id update",
+        "passed": true
+      },
+      {
+        "name": "protected products.created_at update",
+        "passed": true
+      },
+      {
+        "name": "protected variants.store_id update",
+        "passed": true
+      },
+      {
+        "name": "protected variants.id update",
+        "passed": true
+      },
+      {
+        "name": "protected variants.product_id update",
+        "passed": true
+      },
+      {
+        "name": "protected variants.created_at update",
+        "passed": true
+      },
+      {
+        "name": "caller-supplied products id denied",
+        "passed": true
+      },
+      {
+        "name": "caller-supplied variants id denied",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot update memberships",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot update stores",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot update domains",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot update inventory",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot update orders",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot update order_items",
+        "passed": true
+      },
+      {
+        "name": "cannot self-enroll",
+        "passed": true
+      },
+      {
+        "name": "cannot verify own domain by insert",
+        "passed": true
+      },
+      {
+        "name": "cannot create own store",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot assume service role",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot create role",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot disable RLS",
+        "passed": true
+      },
+      {
+        "name": "merchant cannot replace helper",
+        "passed": true
+      },
+      {
+        "name": "anon cannot execute helper",
+        "passed": true
+      },
+      {
+        "name": "helper cannot assert another tenant ownership",
+        "passed": true
+      },
+      {
+        "name": "forged metadata does not promote viewer",
+        "passed": true
+      },
+      {
+        "name": "service sees all tenant products without subject",
+        "passed": true
+      },
+      {
+        "name": "service can change membership despite RLS",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant FK rejects variant product",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant FK rejects inventory variant",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant FK rejects order currency",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant FK rejects item order",
+        "passed": true
+      },
+      {
+        "name": "cross-tenant FK rejects item variant",
+        "passed": true
+      },
+      {
+        "name": "merchant own variant cannot reference foreign product",
+        "passed": true
+      },
+      {
+        "name": "negative inventory",
+        "passed": true
+      },
+      {
+        "name": "over-reserved inventory",
+        "passed": true
+      },
+      {
+        "name": "negative price",
+        "passed": true
+      },
+      {
+        "name": "price cap",
+        "passed": true
+      },
+      {
+        "name": "zero quantity",
+        "passed": true
+      },
+      {
+        "name": "quantity cap",
+        "passed": true
+      },
+      {
+        "name": "generated line total",
+        "passed": true
+      },
+      {
+        "name": "maximum line total fits bigint",
+        "passed": true
+      },
+      {
+        "name": "duplicate tenant slug",
+        "passed": true
+      },
+      {
+        "name": "duplicate tenant SKU",
+        "passed": true
+      },
+      {
+        "name": "duplicate idempotency key",
+        "passed": true
+      },
+      {
+        "name": "committed revocation removes access in fresh session",
+        "passed": true
+      },
+      {
+        "name": "committed demotion removes write authority",
+        "passed": true
+      }
+    ]
+  },
+  "shutdown_output": "waiting for server to shut down.... done\nserver stopped\n",
+  "migration_hashes_after": {
+    "20261110000100_tenant_schema.sql": "b8734663267156f94785ad93a95fad8f035c0e2e782f9ea7d2de6137a823b74d",
+    "20261110000200_tenant_policies.sql": "e15823479614acd2d8af2abd192b4a3732bdd330ababe9051bf22faf4848fb04"
+  },
+  "migrations_unchanged": true,
+  "passed": 228,
+  "failed": 0
+}
