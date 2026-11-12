@@ -1,5 +1,7 @@
 # Milestone 1C — Phase 1 integration preparation
 
+Follow-up: existing-account login/logout and a membership-scoped dashboard are now implemented using additional owner-verified columns. See [merchant login validation](merchant-login-validation.md). The Phase 1 assessment below records the earlier preparation boundary; product/onboarding RPC contracts remain unverified.
+
 Target supplied by project owner: Supabase project `bvwyayceclripdrecoom`, existing `demo-clothing` store reported as draft. These cloud facts have not been independently verified. No cloud connection, migration execution or record mutation was performed. Prefer adapting the application to the validated existing cloud schema; do not apply the Milestone 1B schema over it.
 
 ## Local preparation

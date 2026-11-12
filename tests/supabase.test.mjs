@@ -67,7 +67,8 @@ for (const path of ["/dashboard", "/dashboard/products"]) {
         return {data:null, error:{message:"not a verified session"}};
       }}}),
     });
-    assert.equal(response.status, 401);
+    assert.equal(response.status, 303);
+    assert.equal(response.headers.get("location"), "https://app.example.com/login?notice=expired");
     assert.match(response.headers.get("set-cookie"), /Max-Age=0/);
     assert.equal(response.headers.get("x-middleware-next"), null);
     assertPrivate(response);

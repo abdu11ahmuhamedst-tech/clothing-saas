@@ -44,7 +44,7 @@ export async function updateSession(request, {
     const { data, error } = await supabase.auth.getClaims();
     const dashboard = request.nextUrl.pathname === "/dashboard" || request.nextUrl.pathname.startsWith("/dashboard/");
     if (dashboard && (error || !data?.claims?.sub)) {
-      return finish(NextResponse.json({ error: "Authentication required." }, { status: 401 }));
+      return finish(NextResponse.redirect(new URL("/login?notice=expired", request.url), 303));
     }
     return finish(response);
   } catch {
